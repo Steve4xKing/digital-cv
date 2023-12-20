@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <title>Steve King's Digital CV</title>
 </head>
 <body>
     <header>
-        <nav>
-            <p>Here is an unstyled nav bar within a header</p>
-           <ul>
-            <li>Contact me
-                <ul>
-                    <li>Email: StevenAKing1996@gmail.com</a></li>
 
-                    <li>Phone: (770)-656-5910</li>
-                </ul>
-            </li>
-            <li>LinkedIn</li>
-            <li>GitHub</li>
-            <li>My Portfolio</li>
+        <div id="profilePicDiv">
+            <img id="profilePic" src="../assets/tempPic.jpg" alt="This is a picture of Steve King">
+        </div>
+        <nav>
+           <ul>
+            <li><a href="#contact">Contact me</a></li>
+            <li><a href="https://www.linkedin.com/in/steven-king-9b4930227/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/Steve4xKing" target="_blank">GitHub</a></li>
+            <li><a href="#myProjects">My Projects</a></li>
            </ul>
         </nav>
     </header>
@@ -27,14 +25,18 @@
 
 
     <main>  
-      <h1>Steve King (I have no idea what content to put or how to style it right now)</h1>
+      <h1>Steve King's Digital CV</h1>
 
         <section>
             <article>
                 <h2>About Me</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aspernatur cupiditate assumenda natus autem ullam iusto expedita aliquam adipisci cumque, porro quas, corporis incidunt harum tempora quam minima quisquam ad.</p>
+            </article>
+        </section>
+        <section>
                 <h3>Education</h3>
-                <p><strong>BS in Neuroscience and Minor In Chinese Language and Culture</strong> from Georgia State University</p>
+                <p>Springboard Software Engineering Bootcamp 2023/2024</p>
+                <p><strong>BS in Neuroscience and Minor In Chinese Language and Culture 2021</strong> from Georgia State University</p>
             </article>
         </section>
 
@@ -71,11 +73,11 @@
 
         <section>
             <h3>Technologies</h3>
-            <table>
+            <table id="techTable">
                 <thead>
                     <tr>
                         <th>Technology</th>
-                        <th>Frameworks/Specialties? (I need advice filling this out)</th>
+                        <th>Frameworks</th>
                         <th>Experience</th>
                     </tr>
                 </thead>
@@ -109,7 +111,7 @@
             </table>
         </section>
 
-        <section>
+        <section id="myProjects">
             <h3>Projects</h3>
             <p><a href="index.html">project 1</a> <br> <a href="index.html">project 2</a> <br> <a href="index.html">project 3</a> </p>
         <section>
@@ -118,7 +120,7 @@
             </aside>
         </section>
 
-        <section>
+        <section id="contact">
             <h3>Contact Me</h3>
             <form action="POST">
                 <label for="name">Name</label>

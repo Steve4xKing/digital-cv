@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+}
+
+html{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+body{
+    background-color: rgb(59, 99, 230);
+    color: rgba(224, 224, 224, .9);
+}
+
+/* Below is information for the header and the navbar */
+
+header{
+    background-color:rgba(59, 99, 230, 1) ;
+    color:rgba(224, 224, 224, .9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    top: 0; 
+    background-color: rgba(34, 33, 33, 0.95);
+}
+
+#profilePic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+nav{
+    background-color:rgba(224, 224, 224, .9) ;
+    color: rgba(59, 99, 230, 1);
+    width: 100%;
+    height: 50px;
+    margin: 0 0 0 20px;
+    border-radius: 10px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li{
+    height: 100%;
+    width: 100%;
+}
+
+
+li, li a{
+    font-size: 1.1em;
+    text-decoration: none;
+    text-align: center;
+    color: rgba(59, 99, 230, 1);
+    line-height: 50px;
+}
+
+nav li:hover {
+    background-color: rgba(59, 99, 230, 1);
+    color: rgba(224, 224, 224, .9);
+    border-radius: 10px;
+}
+
+nav li a{
+    /* display: block; */
+    height: 100%;
+    color: inherit;
+}
+
+/* Below I start styling the main part of the page below the header and navbar */
+main{
+    margin: 150px 0 10px 0;
+    padding: 0 20px;
+    text-align: center;
+}
+section{
+    padding: 20px 0;
+}
+
+h2, h3{
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+h1, h2, h3{
+    padding: 0 0 20px 0;
+}
+
+table{
+    background-color:rgba(224, 224, 224, .9);
+    color:rgb(59, 99, 230);
+    border-radius: 10px;
+    text-align: center;
+}
+table{
+    border: 1px solid rgba(224, 224, 224, .9);
+}
+td{
+    border: 1px solid rgb(59, 99, 230);
+}
+
+#techTable{
+    margin: 0 auto;
+    background-color: black;
+    color: rgb(79, 238, 79);
+    font-family: monospace, sans-serif;
+}
+
+
+
+
+
+form{
+    display: flex;
+}
+
+
+@media screen and (max-width: 700px) {
+    /* body{
+        background-color: red;
+        font-size: 14px;
+    } */
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+        margin: 0 0;
+        position: fixed;
+        top: 0;
+        height: 150px;
+        width: 375px;
+    }
+    #profilePic{
+        width: 100px;
+        height: 100px;
+    }
+    main{
+        margin: 210px 0 10px 0;
+        }
+    }
+
+    
