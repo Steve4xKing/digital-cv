@@ -16,70 +16,75 @@ body{
 /* Below is information for the header and the navbar */
 
 header{
-    background-color:rgba(59, 99, 230, 1) ;
-    color:rgba(224, 224, 224, .9);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    position: fixed;
-    width: 100%;
-    top: 0; 
     background-color: rgba(34, 33, 33, 0.95);
+    color:rgba(224, 224, 224, .9);
+    display: block;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    text-align: center;
 }
 
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profilePicDiv{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #profilePic {
-    width: 150px;
-    height: 150px;
+    border: 8px solid rgba(224, 224, 224, .9);
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     object-position: 90% 15%;
 }
 
-nav{
-    background-color:rgba(224, 224, 224, .9) ;
-    color: rgba(59, 99, 230, 1);
-    width: 100%;
-    height: 50px;
-    margin: 0 0 0 20px;
-    border-radius: 10px;
-}
 nav ul{
+    padding: 0;
+    margin: 0;
+    justify-content: center;
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    display:flexbox;
+    text-align: center;
 }
-
-nav li{
-    height: 100%;
-    width: 100%;
+nav ul li{
+    margin: 10px;
+    text-align: center;
 }
-
 
 li, li a{
-    font-size: 1.1em;
+    font-size: 1.3em;
     text-decoration: none;
     text-align: center;
     color: rgba(59, 99, 230, 1);
     line-height: 50px;
+    padding: 10px 20px;
 }
 
-nav li:hover {
+nav li a:hover{
     background-color: rgba(59, 99, 230, 1);
     color: rgba(224, 224, 224, .9);
     border-radius: 10px;
+ 
 }
 
-nav li a{
-    /* display: block; */
-    height: 100%;
-    color: inherit;
+header p{
+    font-size: 1.2em;
 }
 
 /* Below I start styling the main part of the page below the header and navbar */
 main{
-    margin: 150px 0 10px 0;
+    margin: 20px 0 10px 25%;
     padding: 0 20px;
     text-align: center;
 }
@@ -101,10 +106,11 @@ table{
     color:rgb(59, 99, 230);
     border-radius: 10px;
     text-align: center;
-}
-table{
     border: 1px solid rgba(224, 224, 224, .9);
+    width: 75%;
+    margin: 0 auto;
 }
+
 td{
     border: 1px solid rgb(59, 99, 230);
 }
@@ -126,28 +132,7 @@ form{
 
 
 @media screen and (max-width: 700px) {
-    /* body{
-        background-color: red;
-        font-size: 14px;
-    } */
-
-    header{
-        flex-direction: column;
-        align-items: center;
-        font-size: 10px;
-        margin: 0 0;
-        position: fixed;
-        top: 0;
-        height: 150px;
-        width: 375px;
-    }
-    #profilePic{
-        width: 100px;
-        height: 100px;
-    }
-    main{
-        margin: 210px 0 10px 0;
-        }
-    }
+/* make it mobile friendly */
+}
 
     
